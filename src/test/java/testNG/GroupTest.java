@@ -6,7 +6,7 @@ public class GroupTest {
     //S= smoke testing
     //R= regression testing
 
-    @Test(groups = {"S","R"})
+    @Test(groups = {"S","S"})
     public void test01(){
         System.out.println("This is Smoke and Regression test case");
     }

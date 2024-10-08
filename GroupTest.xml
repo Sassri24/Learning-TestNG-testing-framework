@@ -4,11 +4,17 @@
     <test name="Group Test cases">
         <groups>
             <run>
-                <include name="S"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="testNG.GroupTest"/>
-        </classes>
-    </test>
-</suite>
+                <!-- <include name="S"/>
+                    <include name="R"/> -->
+
+                <exclude name="S"/>
+                <include name="R"/>
+
+
+                 </run>
+             </groups>
+             <classes>
+                 <class name="testNG.GroupTest"/>
+             </classes>
+         </test>
+     </suite>
