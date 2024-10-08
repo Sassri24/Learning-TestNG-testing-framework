@@ -6,11 +6,11 @@ public class GroupTest {
     //S= smoke testing
     //R= regression testing
 
-    @Test
+    @Test(groups = {"S","R"})
     public void test01(){
         System.out.println("This is Smoke and Regression test case");
     }
-    @Test
+    @Test(groups = {"R"})
     public void test02(){
         System.out.println("This is Regression test case");
     }
@@ -18,11 +18,11 @@ public class GroupTest {
     public void test03(){
         System.out.println("This is Not Smoke or Regression");
     }
-    @Test
+    @Test(groups = {"S"})
     public void test04(){
         System.out.println("This is Smoke test case");
     }
-    @Test
+    @Test(groups = {"S","R"})
     public void test05(){
         System.out.println("This is Smoke and Regression test case");
     }

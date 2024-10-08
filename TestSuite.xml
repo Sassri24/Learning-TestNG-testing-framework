@@ -5,8 +5,6 @@
         <classes>
             <class name="testNG.PriorityTest01"/>
             <class name="testNG.DependsOnTest"/>
-
-
         </classes>
     </test>
 </suite>
