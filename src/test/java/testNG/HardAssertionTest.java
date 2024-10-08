@@ -3,9 +3,7 @@ package testNG;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.core.StringStartsWith.startsWith;
-
-public class AssertionTest {
+public class HardAssertionTest {
 
 //    String name = "Chamod";
 //
@@ -31,19 +29,19 @@ public class AssertionTest {
     public void valuesNotEqualCheck(){
         String expectedValue = "Learn Well";
         System.out.println("Prior to valuesNotEqualCheck assertion");
-        Assert.assertEquals(actualValue,expectedValue,"Values matched");
+        Assert.assertNotEquals(actualValue,expectedValue,"Values matched");
         System.out.println("After valuesNotEqualCheck assertion");
     }
     @Test(priority =2)
     public void trueConditionCheck(){
         System.out.println("Prior to trueConditionCheck assertion");
-        Assert.assertTrue(actualValue.startsWith("H"),"Condition return a False");
+        Assert.assertTrue(actualValue.startsWith("c"),"Condition return a False");
         System.out.println("After trueConditionCheck assertion");
     }
     @Test(priority =3)
     public void falseConditionCheck(){
         System.out.println("Prior to falseConditionCheck assertion");
-        Assert.assertTrue(actualValue.isBlank(),"Condition return a True");
+        Assert.assertFalse(actualValue.isBlank(),"Condition return a True");
         System.out.println("After trueConditionCheck assertion");
     }
 }
