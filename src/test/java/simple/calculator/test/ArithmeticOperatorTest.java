@@ -30,8 +30,8 @@ public class ArithmeticOperatorTest {
         System.out.println("Actual Subtraction value 1 is : "+actValueSubtraction1);
         Assert.assertEquals(actValueSubtraction1,5,"Failed to cal subtraction 1");
 
-        int actValueSubstraction2 = ArithmeticOperator.calSubtraction(20,5);
-        System.out.println("Actual Subtraction value 2 is : "+actValueSubstraction2);
-        Assert.assertEquals(actValueSubstraction2,15,"Failed to cal subtraction 2");
+        int actValueSubtraction2 = ArithmeticOperator.calSubtraction(20,5);
+        System.out.println("Actual Subtraction value 2 is : "+actValueSubtraction2);
+        Assert.assertEquals(actValueSubtraction2,15,"Failed to cal subtraction 2");
     }
 }
