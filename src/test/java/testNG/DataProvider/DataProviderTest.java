@@ -1,20 +1,13 @@
 package testNG.DataProvider;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class DataProviderTest {
 
-    public void loginTest(String name,String pass){
+    @Test(dataProvider = "getData" , dataProviderClass = CustomDataProvider.class)
+    public void loginTest(String name, String pass){
         System.out.println(name+" "+pass);
     }
 
-    @DataProvider
-    public Object[][] getData(){
-        Object[][] data={
-                {"chamod@gmail.com","chaod123"},
-                {"def@gmail.com","chaod123"},
-                {"xyz@gmail.com","xyz123"}
-        };
-        return  data;
-    }
 }
