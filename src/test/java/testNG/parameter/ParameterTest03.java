@@ -1,4 +1,4 @@
-package parameter;
+package testNG.parameter;
 
 public class ParameterTest03 {
 }
