@@ -22,7 +22,7 @@
     </test>
 
     <test name="Params3">
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Edge"/>
 
         <classes>
             <class name="testNG.parameter.ParameterTest03"/>
