@@ -12,6 +12,10 @@ public class AnnotationsHierarchyExample {
     public void test02() {
         System.out.println("I am Test02");
     }
+    @Test
+    public void test03() {
+        System.out.println("I am Test03");
+    }
 
     @BeforeMethod
     public void beforeMethod() {
