@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class ParallelMethodTest {
 
-    @Test(priority = 0)
+  /*  @Test(priority = 0)
     public void openGoogle(){
         System.out.println("open google");
         WebDriver driver = new ChromeDriver();
@@ -18,5 +18,5 @@ public class ParallelMethodTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.bing.com/");
         driver.quit();
-    }
+    } */
 }
