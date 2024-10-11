@@ -1,11 +1,11 @@
 package testNG.listener;
 
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(CustomListeners.class)  //call to CustomListeners class
 
-public class ListenersTest {
+public class ListenersTestWithErrors {
 
     @Test
     public void test1(){
@@ -15,14 +15,16 @@ public class ListenersTest {
     @Test
     public void test2(){
         System.out.println("I am in inside test method 02");
+        Assert.assertTrue(false);
     }
 
-    @Test
-    public void test3(){
+    @Test(timeOut = 1000)
+    public void test3() throws InterruptedException {
+        Thread.sleep(2000);
         System.out.println("I am in inside test method 03");
     }
 
-    @Test
+    @Test(dependsOnMethods = "test3")
     public void test4(){
         System.out.println("I am in inside test method 04");
     }
